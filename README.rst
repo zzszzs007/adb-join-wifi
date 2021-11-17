@@ -70,3 +70,6 @@ If you wish to demote this app and remove its device owner privileges, run this:
 License
 =======
 adb-join-wifi is available under the BSD license.
+
+
+adb shell am start -n com.steinwurf.adbjoinwifi/.MainActivity -e ssid "Smartisan" -e password_type "WPA" -e password "12345678"
