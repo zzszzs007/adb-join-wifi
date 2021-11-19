@@ -73,3 +73,20 @@ adb-join-wifi is available under the BSD license.
 
 
 adb shell am start -n com.steinwurf.adbjoinwifi/.MainActivity -e ssid "Smartisan" -e password_type "WPA" -e password "12345678"
+
+
+To be certain, list the available python versions using
+
+python3 --version
+With this confirmation, you can uninstall the version you do not want (3.7) by running:
+
+sudo apt remove python3.7 #this removes only the python package
+To remove the python package and any other dependant package which are no longer needed, run:
+
+sudo apt autoremove python
+If you also want to delete configuration and/or data files of python from Ubuntu, run:
+
+sudo apt purge python
+To remove all related python3.7 configuration, data files, and dependencies, run:
+
+sudo apt autoremove --purge python
